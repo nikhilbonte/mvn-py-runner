@@ -14,7 +14,60 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-How to run?
--> mvn clean install
+# Maven
+*/target/*
+dependency-reduced-pom.xml
+core*.dmp
+pom.xml.releaseBackup
 
-That's it!
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+
+# Eclipse
+.cache
+.classpath
+.project
+.checkstyle
+
+.settings
+.externalToolBuilders
+maven-eclipse.xml
+
+#binary files
+#**/bin/**
+!distro/src/bin/**
+
+#log files
+logs
+*.log
+test-output
+
+#Python
+*.pyc
+**/build
+**/dist
+.python-version
+
+# review board
+.reviewboardrc
+
+# other files
+.DS_Store
+*.swp
+
+#hbase package downloaded
+distro/hbase/*.tar.gz
+
+#solr package downloaded
+distro/solr/*.tgz
+
+# Scala-IDE specific
+.cache-main
+.cache-tests
+
+# emacs files
+*#
+*~
